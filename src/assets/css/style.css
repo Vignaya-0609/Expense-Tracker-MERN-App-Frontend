@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", system-ui;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f3f3;
+}
+.container-wrapper{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.home-content{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+}
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-pills .nav-link {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #6a0dad;
+    color: white;
+    font-weight: 500;
+}
+.btn-clr{
+    background-color: #6a0dad;
+    color: white;
+    font-weight: 500;
+}
+.btn-clr:hover{
+    background-color: #6a0dad;
+    color: white;
+}
+.dashboard-card{
+    border: none;
+    outline: none;
+    border: 1px solid #6a0dad;
+    border-radius: 8px;
+    background-color: #6a0dad;
+    color: white;
+}
+.transaction-form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.radio-box-wrapper {
+    gap: 10px;
+  }
+.radio-box {
+    width: 99.8%;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    cursor: pointer;
+    user-select: none;
+}
+.radio-box:hover {
+    background-color: #f5f5f5;
+}
+.radio-box.selected {
+    background-color: #6a0dad;
+    color: white;
+    border-color: #6a0dad;
+}  
+input[type="radio"] {
+    display: none;
+}
+.icon-clr{
+    color: #6a0dad;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .home-content{
+        width: 95%;
+    }
+}
